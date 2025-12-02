@@ -680,27 +680,11 @@ function SellerCostCalculator() {
 
 /* ---------------- PAGES ---------------- */
 function ListingsPage() {
-  return (
-    <div style={{ textAlign: "center", padding: 20 }}>
-      <h2>Listings</h2>
+  // Open veedu.my in the SAME tab
+  window.location.href = "https://www.veedu.my";
 
-      <p>Click below to view my updated listings.</p>
-
-      <a
-        href="https://www.veedu.my"
-        target="_blank"
-        rel="noreferrer"
-        className="btn"
-        style={{ padding: "12px 22px", fontSize: 16 }}
-      >
-        Open Listings
-      </a>
-
-      <p style={{ marginTop: 25, fontSize: 14, color: "#666" }}>
-        Close the tab to return here.
-      </p>
-    </div>
-  );
+  // Return empty UI (we never reach this point)
+  return null;
 }
 
 function CalendarPage() {
