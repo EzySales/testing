@@ -1,0 +1,29 @@
+:root{
+  --bg:#ffffff;--text:#0b1220;--muted:#6b7280;--border:#e6e9ef;--gold:#b8860b;--accent:#1f6feb;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0}
+.container{max-width:980px;margin:0 auto;padding:20px}
+.nav{display:flex;align-items:center;justify-content:center;padding:10px 0;border-bottom:1px solid var(--border)}
+.nav .title{font-weight:700;font-size:18px}
+.hero{display:flex;flex-direction:column;align-items:center;gap:12px;padding:18px 12px}
+.hero .logo{height:96px}
+.hero h1{margin:0;font-size:24px}
+.hero .small{color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+.btn{background:#f3f4f6;border:1px solid var(--border);padding:10px 14px;border-radius:8px;cursor:pointer;color:var(--text);font-weight:600}
+.tab{margin-top:18px;padding:16px;border-radius:10px;border:1px solid var(--border);background:#fff}
+.modal-backdrop{position:fixed;inset:0;background:rgba(2,6,23,0.35);display:flex;align-items:center;justify-content:center;z-index:80}
+.modal{background:#fff;padding:16px;border-radius:10px;max-width:760px;width:94%;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.input,input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);margin-top:8px}
+.calc-row{display:flex;flex-direction:column;gap:10px}
+.result-card{margin-top:12px;padding:12px;background:#fbfbfb;border:1px solid #f0f0f0;border-radius:8px}
+.footer{margin:24px 0;color:var(--muted);text-align:center;font-size:13px}
+.iframe-full{width:100%;height:68vh;border:1px solid var(--border);border-radius:8px}
+.whatsapp{position:fixed;right:16px;bottom:16px;background:var(--gold);padding:12px 16px;border-radius:30px;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+@media(min-width:721px){
+  .hero{flex-direction:row;align-items:center}
+  .hero .left{flex:1;display:flex;gap:12px;align-items:center}
+  .hero .right{margin-left:auto}
+}
