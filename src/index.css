@@ -34,3 +34,30 @@ textarea,
 select {
   font-size: 16px !important;
 }
+/* Prevent iPhone zoom on input WITHOUT making everything big */
+input,
+select,
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Make form labels consistent */
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Make modal & calculator buttons same as home buttons */
+.btn {
+  background: #f3f4f6;
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 14px;
+}
+
