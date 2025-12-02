@@ -38,14 +38,14 @@ select {
 input,
 select,
 textarea {
-  font-size: 12px;
-  padding: 8px;
+  font-size: 6px;
+  padding: 6px;
   border-radius: 6px;
 }
 
 /* Make form labels consistent */
 label {
-  font-size: 12px;
+  font-size: 6px;
   font-weight: 600;
 }
 
@@ -53,11 +53,11 @@ label {
 .btn {
   background: #f3f4f6;
   border: 1px solid var(--border);
-  padding: 8px 12px;
+  padding: 6px 6px;
   border-radius: 6px;
   cursor: pointer;
   color: var(--text);
   font-weight: 600;
-  font-size: 12px;
+  font-size: 6px;
 }
 
