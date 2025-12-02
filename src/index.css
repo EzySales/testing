@@ -26,4 +26,11 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var
   .hero{flex-direction:row;align-items:center}
   .hero .left{flex:1;display:flex;gap:12px;align-items:center}
   .hero .right{margin-left:auto}
+  
+}
+/* Prevent mobile zoom on input */
+input,
+textarea,
+select {
+  font-size: 16px !important;
 }
