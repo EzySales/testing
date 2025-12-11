@@ -1,117 +1,63 @@
-/* ==== GLASSMORPHISM THEME (SAFE VERSION) ==== */
+/* GLASS THEME — SAFE VERSION */
 
 :root {
-  --bg: #f2f4f8;
-  --glass-bg: rgba(255, 255, 255, 0.25);
-  --glass-border: rgba(255, 255, 255, 0.45);
-  --text: #0b1220;
-  --muted: #6b7280;
-  --accent: #1f6feb;
-  --gold: #b8860b;
-}
+  --text:#0b1220;
+  --muted:#6b7280;
+  --gold:#b8860b;
+  --accent:#1f6feb;
 
-/* BASIC RESET */
-* {
-  box-sizing: border-box;
+  --glass-bg: rgba(255,255,255,0.25);
+  --glass-border: rgba(255,255,255,0.35);
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  background: var(--bg);
+  margin:0;
+  padding:0;
+  font-family: Inter, sans-serif;
+  background: #eef2f7;
   color: var(--text);
 }
 
-/* ==== GLASS CARD ==== */
-.glass,
+/* GLASS BLOCK */
 .tab,
 .modal,
 .result-card,
 .iframe-full {
-  background: var(--glass-bg) !important;
-  backdrop-filter: blur(12px);
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-/* ==== MODAL BACKDROP ==== */
-.modal-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(2, 6, 23, 0.45);
-  backdrop-filter: blur(3px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 80;
-}
-
-/* ==== BUTTON ==== */
+/* BUTTON */
 .btn {
-  background: var(--glass-bg);
-  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.2);
   border: 1px solid var(--glass-border);
   padding: 10px 14px;
   border-radius: 10px;
-  cursor: pointer;
-  font-size: 14px;
   font-weight: 600;
-  color: var(--text);
-  transition: 0.25s;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
 }
 
 .btn:hover {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.3);
 }
 
-/* ==== INPUTS ==== */
+/* INPUTS */
 input, select, textarea {
   width: 100%;
   padding: 10px;
-  background: rgba(255,255,255,0.3);
-  backdrop-filter: blur(8px);
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid var(--glass-border);
-  margin-top: 8px;
-  font-size: 14px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
 }
 
-/* ==== LAYOUT ==== */
-.container {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 8px;
-}
-
-label {
-  font-size: 13px;
-}
-
-.whatsapp {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  background: var(--gold);
-  padding: 12px 16px;
-  border-radius: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
-/* Prevent Mobile Zoom */
-input, select, textarea {
-  font-size: 12px !important;
+/* MOBILE ZOOM FIX */
+input, select, textarea, label {
+  font-size: 12px;
 }
