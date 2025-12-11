@@ -1,13 +1,104 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>AK Property</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+/* ======== GLASSMORPHISM THEME FOR YOUR APP ======== */
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.18);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: rgba(0, 0, 0, 0.25);
+  --glass-blur: blur(16px);
+
+  --text: #0b1220;
+  --gold: #b8860b;
+  --accent: #1f6feb;
+  --muted: #6b7280;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #dbeafc, #f4f6fb);
+  font-family: Inter, sans-serif;
+}
+
+/* ======= GLASS CLASS (reusable layer) ======= */
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: 0 8px 25px var(--glass-shadow);
+  border-radius: 16px;
+}
+
+/* ====== BUTTONS ====== */
+.btn {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #000;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+/* ====== MODALS ====== */
+.modal {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+/* ====== CARDS (RESULTS + SECTIONS) ====== */
+.result-card,
+.tab,
+.section-box,
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+/* ====== INPUT FIELDS ====== */
+input, select, textarea {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* ====== WHATSAPP BUTTON ====== */
+.whatsapp {
+  background: var(--gold);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25), 0 0 10px rgba(255,255,255,0.4);
+  border-radius: 50%;
+}
+
+/* Prevent mobile zoom */
+label, input, select, textarea, .btn {
+  font-size: 12px;
+}
 
