@@ -512,10 +512,10 @@ function SellerCostCalculator() {
     let disbursement = 0;
 
     if (lawyerType === "own") {
-      lawyerFee = sell * 0.01;        // 1%
-      disbursement = sell * 0.005;    // 0.5%
+      lawyerFee = sell * 0.015;        // 1%
+      disbursement = sell * 0.0075;    // 0.5%
     } else {
-      lawyerFee = sell * 0.005;       // 0.5% shared
+      lawyerFee = sell * 0.0075;       // 0.5% shared
       disbursement = 0;               // buyer pays their own
     }
 
